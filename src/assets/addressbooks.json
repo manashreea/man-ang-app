@@ -1,0 +1,22 @@
+[
+    {
+        "addressId":1,
+        "name":"Sheetal",
+        "addresse":{"address":"MT Block","city":"New York","country":"USA"}
+    },
+    {
+        "addressId":2,
+        "name":"Hetal",
+        "addresse":{"address":"35 OLMT Park","city":"Mumbai","country":"India"}
+    },
+    {
+        "addressId":3,
+        "name":"Hemant",
+        "addresse":{"address":"Global Hall","city":"Tokyo","country":"Japan"}
+    },
+    {
+        "addressId":4,
+        "name":"Arohi",
+        "addresse":{"address":"SH City Park","city":"Russia","country":"UK"}
+    }
+]

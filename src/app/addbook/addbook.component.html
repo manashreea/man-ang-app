@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+      <table class=".table">
+          <tr style="height:3em" >
+            <td style="width:35%" >Name: </td>
+            <td><input type="text" [(ngModel)]="addBookDetails.name" ></td>
+          </tr>
+          <tr style="height:3em">
+            <td style="width:35%" >Address: </td>
+            <td><input type="text" [(ngModel)]="addBookDetails.address"></td>
+          </tr>
+          <tr style="height:3em">
+            <td style="width:35%">City: </td>
+            <td><input type="text" [(ngModel)]="addBookDetails.city"></td>
+          </tr>
+          <tr style="height:3em">
+            <td style="width:35%">Country:</td>
+            <td> 
+            <select [(ngModel)]="addBookDetails.country" (change)="onCountrySelected($event)">
+              <option *ngFor="let item of countryList" [value]="item.Name">
+                {{item.Name}}
+              </option>
+            </select>
+            </td>
+          </tr >
+      </table>
+  </div><br>
+    
+      <div class="col-x-10">
+        <button class="btn btn-primary" (click)= "onResetAdd()">Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary" (click)= "onSaveAdd()" >Save</button>
+      </div>
+      <!-- <div *ngIf="addSetReset" >Saved Address Details for 
+        {{addName}} + ">>" + {{addAddress}} + ">>" +{{addCity}} + ">>" + {{addCountry}} + ">>" + successfully. </div> -->
+</div>

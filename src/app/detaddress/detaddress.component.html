@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-x-8">
+      <table class="table table-condensed">
+          <thead>
+              <tr> 
+                <th>Name</th>
+                <th>Address</th>
+                <th></th> 
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let addr of iaddressbooks | async">     
+              <td>{{addr.name}}</td>
+               <td>{{addr.address}}</td> 
+              <td>
+                  <!-- <button (click) = "goToAddressBook(addr.addressId)" >>></button>    -->
+                 <a [routerLink]="['/addbook',addr.addressId]" > >> </a> 
+              </td>
+              <td ></td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
